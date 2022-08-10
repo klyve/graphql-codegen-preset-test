@@ -1,0 +1,24 @@
+{
+  "name": "graphql-codegen-preset-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:setup": "graphql-codegen --config codegen-introspection.yaml",
+    "test:introspection": "graphql-codegen --config codegen-test-introspection.yaml",
+    "test:schema": "graphql-codegen --config codegen-test-schema.yaml",
+    "test:operations": "graphql-codegen --config codegen-test-near-operation.yaml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-codegen/cli": "^2.11.5",
+    "@graphql-codegen/introspection": "^2.2.1",
+    "@graphql-codegen/near-operation-file-preset": "^2.4.1",
+    "@graphql-codegen/typescript": "^2.7.3",
+    "@graphql-codegen/typescript-operations": "^2.5.3",
+    "@graphql-codegen/typescript-react-apollo": "^3.3.3"
+  }
+}

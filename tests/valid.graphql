@@ -1,0 +1,13 @@
+query GetUserValid($id: ID!) {
+  user(id: $id) {
+    id
+    name
+  }
+}
+
+mutation CreateUserValid($input: CreateUserInput!) {
+  createUser(input: $input) {
+    id
+    name
+  }
+}

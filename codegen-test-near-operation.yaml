@@ -1,0 +1,8 @@
+overwrite: true
+generates:
+  operations.ts:
+    documents: "tests/*.graphql"
+    plugins:
+      - typescript-operations
+      - typescript-react-apollo
+    schema: ./schema.json

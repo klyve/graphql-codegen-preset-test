@@ -1,0 +1,14 @@
+overwrite: true
+generates:
+  tests/generated:
+    documents: "tests/*.graphql"
+    preset: near-operation-file
+    presetConfig:
+      extension: .introspection.ts
+      baseTypesPath: "~./graphqlTypes.ts"
+    plugins:
+      - typescript-operations
+      - typescript-react-apollo
+    config:
+      withHooks: true
+    schema: ./schema.json

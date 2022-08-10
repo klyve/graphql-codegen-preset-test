@@ -1,0 +1,13 @@
+query GetUserInvalid($id: ID!) {
+  user(unknown: $id) {
+    id
+    name
+  }
+}
+
+mutation CreateUserInvalid($input: CreateUserInput!) {
+  createUser(unknown: $input) {
+    id
+    name
+  }
+}

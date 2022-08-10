@@ -1,6 +1,6 @@
 overwrite: true
 generates:
-  operations.ts:
+  tests/operations.ts:
     documents: "tests/*.graphql"
     plugins:
       - typescript-operations

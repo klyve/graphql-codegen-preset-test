@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./run-tests.sh",
     "test:setup": "graphql-codegen --config codegen-introspection.yaml",
     "test:introspection": "graphql-codegen --config codegen-test-introspection.yaml",
     "test:schema": "graphql-codegen --config codegen-test-schema.yaml",
-    "test:operations": "graphql-codegen --config codegen-test-near-operation.yaml"
+    "test:operations": "graphql-codegen --config codegen-test-near-operation.yaml",
+    "test:cleanup": "rm -rf ./tests/*.ts"
   },
   "keywords": [],
   "author": "",

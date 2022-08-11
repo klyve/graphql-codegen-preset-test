@@ -2,6 +2,24 @@
 
 This repository is created to illustrate a bug where using the codegen preset `near-operation-file` results in skipped typechecking operations.
 
+Given the following codegen yaml
+
+```yaml
+generates:
+  generated:
+    documents: "*.graphql"
+    preset: near-operation-file
+    presetConfig:
+      extension: .generated.ts
+      baseTypesPath: ./types.ts
+    plugins:
+      - typescript-operations
+      - typescript-react-apollo
+    config:
+      withHooks: true
+    schema: ./schema.graphql
+```
+
 Given the schema
 
 ```graphql

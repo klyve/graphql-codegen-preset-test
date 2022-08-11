@@ -5,6 +5,11 @@ query GetUserValid($id: ID!) {
   }
 }
 
+fragment UserFragment on User {
+  id
+  name
+}
+
 mutation CreateUserValid($input: CreateUserInput!) {
   createUser(input: $input) {
     id

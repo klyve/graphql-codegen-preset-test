@@ -6,8 +6,8 @@ query GetUserInvalid($id: ID!) {
 }
 
 mutation CreateUserInvalid($input: CreateUserInput!) {
-  createUser(unknown: $input) {
-    id
-    name
+  createUser(unknown: $unknown) {
+    ...UserFragment
+    ...UNKNOWN_FRAGMENT
   }
 }

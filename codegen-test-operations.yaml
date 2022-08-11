@@ -4,5 +4,4 @@ generates:
     documents: "tests/*.graphql"
     plugins:
       - typescript-operations
-      - typescript-react-apollo
     schema: ./schema.json

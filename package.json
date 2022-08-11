@@ -7,8 +7,8 @@
     "test": "./run-tests.sh",
     "test:setup": "graphql-codegen --config codegen-introspection.yaml",
     "test:introspection": "graphql-codegen --config codegen-test-introspection.yaml",
-    "test:schema": "graphql-codegen --config codegen-test-schema.yaml",
-    "test:operations": "graphql-codegen --config codegen-test-near-operation.yaml",
+    "test:schema": "graphql-codegen --debug --config codegen-test-schema.yaml",
+    "test:operations": "graphql-codegen --debug --config codegen-test-operations.yaml",
     "test:cleanup": "rm -rf ./tests/*.ts"
   },
   "keywords": [],
@@ -21,6 +21,7 @@
     "@graphql-codegen/typescript": "^2.7.3",
     "@graphql-codegen/typescript-operations": "^2.5.3",
     "@graphql-codegen/typescript-react-apollo": "^3.3.3",
-    "graphql": "^16.5.0"
+    "graphql": "^16.5.0",
+    "typescript": "^4.7.4"
   }
 }

@@ -44,6 +44,8 @@ results in no errors but the expected result is:
 - `unknown` is not an argument
 - UNKNOWN_FRAGMENT does not exist in the schema
 
+As observed it skips the typechecking and generates code for the invalid file
+
 ## Running the tests:
 
 To run the tests clone the repo and run `yarn install` then `yarn test`.

@@ -4,7 +4,7 @@ This repository is created to illustrate a bug where using the codegen preset `n
 
 Given the schema
 
-```
+```graphql
 schema {
   mutation: Mutation
   query: Query
@@ -30,7 +30,7 @@ type Mutation {
 
 And the near-operation file:
 
-```
+```graphql
 mutation CreateUser($input: CreateUserInput!) {
   createUser(unknown: $unknown) {
     ...UNKNOWN_FRAGMENT

@@ -20,7 +20,7 @@ generates:
     schema: ./schema.graphql
 ```
 
-Given the schema
+The schema
 
 ```graphql
 schema {
